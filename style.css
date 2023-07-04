@@ -11,8 +11,12 @@ h1 {
     text-align: center;
 }
 
-.passage {
+.passages {
     border: 1px solid #dddcda;
     background-color: white;
     padding: 40px 40px 64px;
+}
+
+.number {
+    font-weight: 700;
 }
