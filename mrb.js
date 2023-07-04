@@ -20,4 +20,14 @@ async function renderText(title, chapter) {
     container.innerHTML = html;
 }
 
+var chapter = 1
 renderText("Genesis", 1)
+document.getElementById("button").addEventListener(() => {
+    if (chapter == 1) {
+        renderText("Genesis", 2)
+        document.getElementById("button").innerHTML = `<i class="fa-solid fa-arrow-left"></i>`
+    } else {
+        renderText("Genesis", 1)
+    }
+})
+
