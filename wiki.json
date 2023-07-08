@@ -1,0 +1,53 @@
+{
+    "teams": {"Church of the Hei": {
+        "info": "The Church of the Hei was a cult that started in Liberi, shortly before their merger with Nox. Many well known members existed in this group and they were often at odds with the stricter Board Members. This faction was known for their extensive use of mandarin during meetings and often were reprimanded for the use of the black ghost spell. The group was eventually disbanded after the Fallout of '76",
+        "info2":"The Church of the Hei was deeply involved with the MR Bible and treated it as a sort of \"creation\" myth",
+        "info3":"The Fallout of '67 happened sometime between June 16th or June 17th where the DARK arts used by members of the Church were leaked by Pepsi. This lead to increased scrutiny by the One Above All which led to the disbandment of the group."
+    }, 
+    "NoxLiberi": {
+        "info":"NoxLiberi is a team that is led jointly by R. M. and Ryan J. Their team consists of 8 members."
+    },
+    "Skill Issue": {
+        "info":"Skill Issue is a team that is led by Prince Wanhao. Their team consists of 6 members."
+    },
+    "Modulo": {
+        "info":"Modulo was a team consisting of (now) geriatric seniors hailing from Kamiak and Mariner. The team was led by Supreme Leader Sean though leadership status is often disputed by members on the team."
+    }},
+    "people": {
+        "Wanhao":{
+            "bio":"",
+            "faction":"Skill Issue"
+        },
+        "Sean": {
+            "bio":""
+        },
+        "Long": {
+
+        },
+        "Pepsi Man": {
+
+        },
+        "Keiven": {
+
+        }
+    },
+    "incidents": {
+        "Pepsi Fiasco": {
+
+        },
+        "Events": {
+
+        },
+        "Election of '23": {
+
+        },
+        "Worlds 2023": {
+
+        }, 
+        "First Incursion": {
+
+        }
+    }
+
+
+}

@@ -1,0 +1,237 @@
+:root {
+    --body-color: 30, 40, 50;
+    --theme-secondary: 20, 20, 20;
+    --theme-primary: 255, 255, 255;
+    --theme-bg: 0, 0, 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: rgb(var(--theme-bg));
+    color: rgb(var(--theme-primary));
+}
+
+h1, h2, h3, input, select, button, span, a, p {
+    color: rgb(var(--theme-primary));
+    
+}
+
+h1 {
+    
+    padding: 0 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#timer {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-shadow: 0rem 0rem 0.15rem rgba(0 0 0 / 50%);
+}
+
+.fancy-scrollbar::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+  
+  .fancy-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .fancy-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+
+.time-i {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-shadow: 0rem 0rem 0.15rem rgba(0 0 0 / 50%);
+    font-weight: 700;
+}
+
+.green {
+    color: rgb(76, 175, 80);
+}
+
+.blue {
+    color: rgb(3, 169, 244);
+}
+
+.value { 
+    text-align: center;
+    height: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-shadow: 0rem 0rem 0.15rem rgba(0 0 0 / 50%);
+}
+
+.header {
+    height: 45vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.9) 100%
+      ), url("./mrwiki/colorful-abstract-painting-with-rainbow-background_1340-36730.avif");
+    background-position: 50%;
+    background-size: fit;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(var(--theme-secondary));
+    border-radius: 0.5rem;
+    margin-top: 3%;
+    padding: 2rem 4rem;
+}
+
+.header-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header-cont {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.featured {
+    height: 30rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.featured-today {
+    width: 25%;
+    background-color: rgb(83, 100, 55);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+}
+
+.ft-title {
+    text-align: center;
+}
+
+
+
+.spotlight { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-box {
+    width: 70%;
+    border-radius: 1rem;
+    background-color: rgb(55, 85, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+}
+
+.deck {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.featured-card { 
+    padding: 1rem;
+    min-height: 24em;
+    min-width: 18em;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(255 255 255 / 10%);
+}
+
+.fcard-img {
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+.fcard-title {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.f-title {
+    font-size: 1.25rem;
+    color: rgba(255 255 255 / 10%);
+}
+
+.fch { 
+    background-image: url("./mrwiki/image.webp");
+}
+
+.fcp {
+    background-image: url("./mrwiki/pepsi.jpg");
+}
+
+.fct {
+    background-image: url("./mrwiki/T-Class.jpg");
+}
+
+.fte {
+    background-image: url("./mrwiki/board.webp");
+}
+
+.ftk {
+    background-image: url("./mrwiki/K-Class\ Event.webp");
+}
+
+.ftw {
+    background-image: url("./mrwiki/wanhaoscrolls.webp");
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-s::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.hide-s {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.ft-card {
+    margin-right: 0;
+}
+
+#onclick {
+    min-height: 100%;
+    z-index: 100;
+}
