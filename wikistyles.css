@@ -4,16 +4,20 @@
     --theme-primary: 255, 255, 255;
     --theme-bg: 0, 0, 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Rubik", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
     background-color: rgb(var(--theme-bg));
+    background-image: url('https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/6438c3059d443cd7a78762eb_stars-bg.png');
+    background-repeat: repeat;
+    
+    background-size: 50%;
     color: rgb(var(--theme-primary));
 }
 
@@ -28,12 +32,17 @@ h1 {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -1.5px;
+    font-weight: bold;
 }
 
+
 #timer {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -1.5px;
     color: white;
+    font-weight: 700;
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-shadow: 0rem 0rem 0.15rem rgba(0 0 0 / 50%);
@@ -68,23 +77,59 @@ h1 {
     color: rgb(3, 169, 244);
 }
 
+
+
 .value { 
     text-align: center;
     height: 4rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -1.5px;
     color: white;
     font-size: 3.5rem;
     line-height: 3.5rem;
     text-shadow: 0rem 0rem 0.15rem rgba(0 0 0 / 50%);
 }
 
+.container {
+    display: grid;
+    padding: 24px;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    grid-gap: 10px;
+  }
+  
+  .box {
+    background-color: #ccc;
+    
+  }
+  
+  .main {
+    border-radius: 24px;
+    background-color: rgb(2, 2, 2);
+    grid-column: span 2;
+    max-height: fit-content;
+    border: 2px solid #303030;
+    grid-row: span 1;
+    
+  }
+  
+  .top-story {
+    border-radius: 24px;
+    border: 2px solid #303030;
+    background-color: rgb(2, 2, 2);
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 519px;
+  }
+  
+  
+  
+
+
 .header {
     height: 45vh;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0, 0.9) 100%
-      ), url("./mrwiki/colorful-abstract-painting-with-rainbow-background_1340-36730.avif");
     background-position: 50%;
     background-size: fit;
     display: flex;
@@ -101,25 +146,32 @@ h1 {
 .header-info { 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(var(--theme-secondary));
+
+    justify-content: left;
+
+    gap: 1rem;
     border-radius: 0.5rem;
-    margin-top: 3%;
-    padding: 2rem 4rem;
+
+
+    margin: 32px;
 }
 
 .header-value {
     font-size: 2rem;
+    color: #eeeeee;
     font-weight: 700;
 }
 
 .header-cont {
     font-size: 1.5rem;
+    color: #bebebe;
     font-weight: 700;
 }
 
 .featured {
     height: 30rem;
+    background: rgb(0, 0, 0);
+
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -128,22 +180,29 @@ h1 {
 
 .featured-today {
     width: 25%;
-    background-color: rgb(83, 100, 55);
+    background-color: rgb(134, 134, 134);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .ft-title {
-    text-align: center;
+    text-align: left;
+    margin-left: 28px;
+    font-size: 24px;
+    color: #eeeeee;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 24px;
 }
 
 
 
 .spotlight { 
     display: flex;
+    padding: 24px;
     justify-content: center;
     align-items: center;
 }
@@ -151,7 +210,7 @@ h1 {
 .featured-box {
     width: 70%;
     border-radius: 1rem;
-    background-color: rgb(55, 85, 100);
+    background-color: rgb(102, 102, 102);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -160,6 +219,9 @@ h1 {
 
 .deck {
     display: flex;
+    margin: 28px;
+    margin-top: 0px;
+    margin-right: 0px;
     align-items: center;
     flex-direction: row;
     overflow-x: scroll;
@@ -167,29 +229,44 @@ h1 {
 
 .featured-card { 
     padding: 1rem;
+    height: 380px;
+    
     min-height: 24em;
     min-width: 18em;
-    margin-right: 2rem;
+    margin-right: 1rem;
     border-radius: 1rem;
     background-color: rgba(255 255 255 / 10%);
 }
 
 .fcard-img {
     height: 10rem;
+    filter: grayscale(90%);
+    transition: 150ms ease-in-out;
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
 }
 
+.fcard-img:hover {
+    filter: grayscale(0%);
+}
+
 .fcard-title {
     margin: 0.5rem 0;
     font-size: 1.5rem;
+    letter-spacing: -1px;
     font-weight: 700;
 }
 
 .f-title {
     font-size: 1.25rem;
     color: rgba(255 255 255 / 10%);
+}
+
+.fcard-text{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgba(255 255 255 / 80%);
 }
 
 .fch { 
